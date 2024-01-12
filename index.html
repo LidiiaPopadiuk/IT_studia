@@ -13,10 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.min.css" />
   </head>
   <body>
-    <section class="standarts">
+    <section class="standarts" data-aos="fade-right">
       <div class="container">
         <div class="standarts__text">
           <h2 class="standarts__title">
@@ -36,6 +37,7 @@
             src="./img/standard-1x.png"
             srcset="./img/standard-1x.png 1x, ./img/standard-2x.png 2x"
             alt="standarts__img"
+            data-aos="flip-left"
           />
         </picture>
       </div>
@@ -167,7 +169,7 @@
         </div>
       </ul>
     </section>
-    <section class="work">
+    <section class="work" data-aos="fade-left">
       <div class="work__rects">
         <div class="work__rect--1"></div>
         <div class="work__rect--2"></div>
@@ -188,6 +190,7 @@
                 src="./img/work-1x.jpg"
                 srcset="./img/work-1x.jpg 1x, ./img/work-2x.png 2x"
                 alt="work"
+                data-aos="zoom-in"
               />
             </picture>
             <h3 class="work__h3"><span>01. </span>Дослідження і упаковка</h3>
@@ -205,6 +208,7 @@
                 src="./img/work-1x.jpg"
                 srcset="./img/work-1x.jpg 1x, ./img/work-2x.png 2x"
                 alt="work"
+                data-aos="zoom-in"
               />
             </picture>
             <h3 class="work__h3"><span>01. </span>Дослідження і упаковка</h3>
@@ -222,6 +226,7 @@
                 src="./img/work-1x.jpg"
                 srcset="./img/work-1x.jpg 1x, ./img/work-2x.png 2x"
                 alt="work"
+                data-aos="zoom-in"
               />
             </picture>
             <h3 class="work__h3"><span>01. </span>Дослідження і упаковка</h3>
@@ -235,5 +240,7 @@
         </ul>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
