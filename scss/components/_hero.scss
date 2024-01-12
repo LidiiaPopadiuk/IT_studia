@@ -1,0 +1,23 @@
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../img/hero_bg1x.jpg), lightgray 0px -67.183px / 100% 134.84% no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../img/hero_bg2x.jpg),
+      lightgray 0px -67.183px / 100% 134.84% no-repeat;
+  }
+  &__btn {
+    @extend %btn
+  }
+}
