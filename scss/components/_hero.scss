@@ -1,23 +1,40 @@
 .hero {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url(../img/hero_bg1x.jpg), lightgray 0px -67.183px / 100% 134.84% no-repeat;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+  url(../img/hero_bg1x.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 219px 0;
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
-      url(../img/hero_bg2x.jpg),
-      lightgray 0px -67.183px / 100% 134.84% no-repeat;
-  }
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+  url(../img/hero_bg2x.jpg);}
+
   &__btn {
-    @extend %btn
+    @extend %btn;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  &__title {
+    color: $color-title;
+text-align: center;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 134.09%; 
+margin-top: 20px;
+  }
+
+  &__subtitle {
+    color: $color-title;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
   }
 }
