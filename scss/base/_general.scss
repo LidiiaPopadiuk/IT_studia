@@ -3,14 +3,41 @@
   box-sizing: border-box;
   font-style: normal;
   margin: 0;
+  padding: 0;
+  border: none;
   font-size: 16px;
   display: block;
+  line-height: normal;
+}
+
+*::selection {
+  background: $blue;
+  color: $wheat;
 }
 
 .container {
-  width: 1110px;
+  width: 100%;
+  padding: 15px;
   margin: 0 auto;
   padding: 100px 0;
+
+  @media (min-width:576px) {
+    width: 540px;
+    padding: 0;
+  }
+
+  @media (min-width:785px) {
+    width: 720px;
+  }
+
+  @media (min-width:1000px) {
+    width: 960px;
+  }
+
+  @media(min-width:1200px) {
+    width: 1110px;
+  }
+
 }
 
 h2 {
@@ -24,4 +51,29 @@ p {
   color: $grey;
   font-weight: 400;
   line-height: 158.47%;
+}
+
+a {
+  color: $blue;
+}
+
+.btn {
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 15px 36px;
+  font-weight: 500;
+  color: white;
+  border-radius: 30px;
+  background: $blue;
+  height: 45px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 0px rgb(111, 111, 111);
+  }
+}
+
+section {
+  padding-top: 100px;
 }

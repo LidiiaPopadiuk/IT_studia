@@ -10,7 +10,15 @@
   }
 
   &__text {
-    width: 50%;
+    order: 2;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width:790px) {
+      width: 50%;
+      order: 1;
+      text-align: left;
+    }
   }
 
   &__title {
@@ -19,12 +27,16 @@
 
   &__link {
     margin-top: 42px;
-    color: $blue;
   }
 
-  &__img {
-    width: 40%;
+  picture {
+    order: 1;
+    width: 100%;
     height: auto;
+
+    @media (min-width:790px) {
+      width: 50%;
+    }
   }
 
   &__ul {
