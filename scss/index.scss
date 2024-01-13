@@ -1,6 +1,22 @@
 @import "./utils/colors";
+// base
+@import "./base/fonts";
 @import "./base/general";
+@import "./base/normalize";
+@import "./base/reset";
 
+// utils
+@import "./utils/mixins";
+@import "./utils/placeholder";
+@import "./utils/variables";
+@import "./utils/placeholder";
+
+//components
+@import "./components/benefits";
+@import "./components/footer";
 @import "./components/header";
+@import "./components/hero";
+@import "./components/subscribe";
+
 @import "./components/standarts";
 @import "./components/work";

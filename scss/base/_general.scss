@@ -1,3 +1,7 @@
+body {
+  font-family: Montserrat;
+}
+
 *:not(title, script) {
   // font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
@@ -24,72 +28,26 @@ html {
 }
 
 .container {
-  width: 100%;
-  padding: 15px;
+  padding: 0 15px;
   margin: 0 auto;
-
-  @media (min-width:576px) {
-    width: 540px;
+  max-width: 100%;
+  @media (min-width: 768px) {
+    max-width: 700px;
     padding: 0;
   }
-
-  @media (min-width:785px) {
-    width: 720px;
+  @media (min-width: 1200px) {
+    max-width: 1110px;
   }
-
-  @media (min-width:1000px) {
-    width: 960px;
-  }
-
-  @media(min-width:1200px) {
-    width: 1110px;
-  }
-
 }
 
-h2 {
-  color: #323232;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 146.28%;
-}
-
-p {
-  color: $grey;
-  font-weight: 400;
-  line-height: 158.47%;
+li {
+  list-style-type: none;
 }
 
 a {
-  color: $blue;
+  text-decoration: none;
 }
 
-.btn {
-  transition: 0.5s;
-  cursor: pointer;
-  padding: 15px 36px;
-  font-weight: 500;
-  color: white;
-  border-radius: 30px;
-  background: $blue;
-  height: 45px;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    box-shadow: 0px 0px 10px 0px rgb(111, 111, 111);
-  }
-}
-
-section {
-  padding-top: 50px;
-
-  @media (min-width: 790px) {
-    padding-top: 100px;
-  }
-}
-
-img{
-  width: 100%;
-  height:auto;
+body {
+    font-family: Montserrat;
 }

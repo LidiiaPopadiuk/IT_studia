@@ -1,0 +1,87 @@
+.benefits {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  &__title {
+    color: $dark;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%;
+  }
+  &__subtitle {
+    color: $grey;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    padding-bottom: 116px;
+  }
+  &__descr {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  &__elipse2 {
+    border-radius: 50% 50%;
+    border: 1px solid $light-blue;
+    width: 90px;
+    height: 90px;
+  }
+  &__elipse1 {
+    border-radius: 50% 50%;
+    border: 1px solid $light-grey;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+  }
+  &__box {
+    position: relative;
+  }
+  &__wallpaper {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    padding: 13px;
+  }
+  &__descr {
+    &--title {
+      color: #000;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &--text {
+      color: $grey;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 158.47%;
+    }
+  }
+  &__btn {
+    border-radius: 30px;
+    background-color: $light-blue;
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    width: 200px;
+    height: 45px;
+  }
+  &__box {
+    &--btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 55px;
+    }
+  }
+}
