@@ -37,7 +37,10 @@
 
   &__title {
     color: #fff;
-    font-style: normal;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 146.28%;
+    /* 52.661px */
     margin-bottom: 20px;
 
     @media (min-width: 785px) {
@@ -45,6 +48,13 @@
     }
 
     /* 52.661px */
+  }
+
+  &__p {
+    color: $grey;
+    font-weight: 400;
+    line-height: 158.47%;
+    /* 25.355px */
   }
 
   &__ul {
@@ -91,5 +101,11 @@
 
   &__link {
     margin-top: 47px;
+    color: $blue;
+    text-decoration: underline
+  }
+
+  .btn {
+    @extend %btn;
   }
 }

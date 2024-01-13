@@ -22,11 +22,24 @@
   }
 
   &__title {
+    color: $black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 146.28%;
     margin-bottom: 60px;
+  }
+
+  &__desc {
+    color: $grey;
+    font-weight: 400;
+    line-height: 158.47%;
+    /* 25.355px */
   }
 
   &__link {
     margin-top: 42px;
+    color: $blue;
+    text-decoration: underline;
   }
 
   picture {
