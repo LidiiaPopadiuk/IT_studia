@@ -2,8 +2,13 @@
   padding: 40px 407px 40px;
   opacity: 0.5;
   border-bottom:1px solid $color-border;
-//   background: transparent;
-background-color: aqua;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+// background-color: aqua;
   &__link {
     color: $color-title;
     font-size: 16px;

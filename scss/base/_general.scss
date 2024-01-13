@@ -1,3 +1,7 @@
+body {
+  font-family: Montserrat;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -11,10 +15,14 @@
   }
 }
 
-a {
-    text-decoration: none;
+li {
+  list-style-type: none;
 }
 
-li {
-    list-style-type: none;
+a {
+  text-decoration: none;
+}
+
+body {
+    font-family: Montserrat;
 }
