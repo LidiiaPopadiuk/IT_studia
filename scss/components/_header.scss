@@ -1,3 +1,25 @@
 .header {
-    padding: 40px 407px 40px;
+  padding: 40px 407px 40px;
+  opacity: 0.5;
+  border-bottom:1px solid $color-border;
+//   background: transparent;
+background-color: aqua;
+  &__link {
+    color: $color-title;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__list {
+    width: 581px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    // padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
