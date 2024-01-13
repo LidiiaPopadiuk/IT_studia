@@ -1,5 +1,18 @@
+// base
+@import "./base/fonts";
 @import "./base/general";
+@import "./base/normalize";
+@import "./base/reset";
+
+// utils
 
 @import "./utils/colors";
+@import "./utils/mixins";
+@import "./utils/placeholder";
+@import "./utils/variables";
 
+//components
+@import "./components/benefits";
+@import "./components/footer";
 @import "./components/header";
+@import "./components/subscribe";
