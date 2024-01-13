@@ -1,0 +1,56 @@
+.hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../img/hero_bg1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 219px 0;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../img/hero_bg2x.jpg);
+  }
+
+  &__btn {
+    @extend %btn;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  &__title {
+    color: $color-title;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 134.09%;
+    margin-top: 20px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    color: $color-title;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  }
+}
+// done
