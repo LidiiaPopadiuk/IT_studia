@@ -13,10 +13,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/index.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.min.css">
   </head>
   <body>
     <main>
+        <section class="hero" data-aos="zoom-in-down">
+            <div class="container">
+                <h2 class="hero__subtitle">Передова IT студія</h2>
+                <h1 class="hero__title">Ми створюємо легкі рішення важких задач і проблем</h1>
+                <button class="hero__btn">Наші проекти</button>
+            </div>
+        </section>
       <section class="benefits">
         <div class="container">
           <h2 class="benefits__title">
@@ -96,5 +104,7 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

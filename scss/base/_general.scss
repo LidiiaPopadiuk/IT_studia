@@ -3,17 +3,26 @@ body {
 }
 
 .container {
-  max-width: 1113px;
+  padding: 0 15px;
   margin: 0 auto;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  display: block;
   max-width: 100%;
-  height: auto;
+  @media (min-width: 768px) {
+    max-width: 700px;
+    padding: 0;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1110px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    font-family: Montserrat;
 }
