@@ -27,7 +27,6 @@ html {
   width: 100%;
   padding: 15px;
   margin: 0 auto;
-  padding: 100px 0;
 
   @media (min-width:576px) {
     width: 540px;
@@ -83,5 +82,14 @@ a {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 50px;
+
+  @media (min-width: 790px) {
+    padding-top: 100px;
+  }
+}
+
+img{
+  width: 100%;
+  height:auto;
 }

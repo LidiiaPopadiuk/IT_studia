@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/index.min.css" />
   </head>
   <body>
-    <section class="standarts" data-aos="fade-right">
+    <section class="standarts">
       <div class="container">
-        <div class="standarts__text">
+        <div class="standarts__text" data-aos="fade-right">
           <h2 class="standarts__title">
             Високі стандарти <br />
             розробки
@@ -169,9 +169,9 @@
         </li>
       </ul>
     </section>
-    <section class="work" data-aos="fade-left">
+    <section class="work">
       <div class="work__rect"></div>
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="work__wrapper">
           <h2 class="work__title">
             Наші роботи на яких ми <br />
@@ -240,6 +240,10 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>AOS.init();</script>
+    <script>
+      AOS.init({
+        duration: 1250,
+      });
+    </script>
   </body>
 </html>

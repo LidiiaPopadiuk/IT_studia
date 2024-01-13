@@ -37,16 +37,19 @@
 
   &__title {
     color: #fff;
-    font-size: 36px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 146.28%;
+    margin-bottom: 20px;
+
+    @media (min-width: 785px) {
+      margin-bottom: 0;
+    }
+
     /* 52.661px */
   }
 
   &__ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 85px;
@@ -54,7 +57,11 @@
   }
 
   &__li {
-    width: 300px;
+    width: 275px;
+
+    @media (min-width: 375px) {
+      width: 300px;
+    }
 
     @media (min-width:486px) {
       width: 350px;
@@ -80,7 +87,6 @@
 
   &__img {
     border-radius: 10px;
-    width: inherit;
   }
 
   &__link {
