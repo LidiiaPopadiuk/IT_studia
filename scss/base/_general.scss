@@ -2,18 +2,56 @@ body {
   font-family: Montserrat;
 }
 
-.container {
-  max-width: 1113px;
-  margin: 0 auto;
-}
-
-ul {
+*:not(title, script) {
+  // font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-style: normal;
+  margin: 0;
   padding: 0;
-  list-style: none;
+  border: none;
+  font-size: 16px;
+  display: block;
+  line-height: normal;
 }
 
-img {
-  display: block;
+body {
+  overflow: hidden;
+}
+
+html {
+  overflow-y: auto;
+}
+
+*::selection {
+  background: $blue;
+  color: $wheat;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
   max-width: 100%;
-  height: auto;
+  @media (min-width: 768px) {
+    max-width: 700px;
+    padding: 0;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1110px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+img{
+  width:100%;
 }
