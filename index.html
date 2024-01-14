@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk-UA">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,29 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/index.min.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
   </head>
   <body>
     <main>
-      <section class="hero" data-aos="zoom-in-down">
-        <div class="container">
-          <h2 class="hero__subtitle">Передова IT студія</h2>
-          <h1 class="hero__title">
-            Ми створюємо легкі рішення важких задач і проблем
-          </h1>
-          <button class="hero__btn">Наші проекти</button>
-        </div>
-      </section>
       <section class="benefits">
         <div class="container">
           <h2 class="benefits__title">
@@ -109,6 +94,26 @@
           <div class="benefits__box--btn">
             <button class="benefits__btn">Всі послуги</button>
           </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__line"></div>
+          <h3 class="subscribe__title">Підпишіться на нашу розсилку</h3>
+          <p class="subscribe__subtitle">
+            Корисні статті, акції, новини - отримайте все це зараз!
+          </p>
+          <div class="subscribe__box">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Ваш e-mail"
+            />
+            <button class="subscribe__btn">Підписатися</button>
+          </div>
+          <p class="subscribe__text">
+            Ми не шлем спам, і не передаємо нікому ваші дані
+          </p>
         </div>
       </section>
       <section class="standarts">
@@ -332,15 +337,5 @@
         </div>
       </section>
     </main>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/index.js"></script>
-
-    <script>
-      AOS.init({
-        duration: 1250,
-      });
-    </script>
   </body>
 </html>
