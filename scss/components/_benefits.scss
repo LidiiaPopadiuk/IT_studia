@@ -5,25 +5,33 @@
     color: $dark;
     text-align: center;
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 146.28%;
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
   &__subtitle {
     color: $grey;
     text-align: center;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 158.47%;
     padding-bottom: 116px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
   &__descr {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-around;
   }
   &__elipse2 {
     border-radius: 50% 50%;
@@ -38,9 +46,7 @@
     height: 110px;
     padding: 10px;
   }
-  &__box {
-    position: relative;
-  }
+
   &__wallpaper {
     position: absolute;
     top: 25px;
@@ -78,10 +84,26 @@
     height: 45px;
   }
   &__box {
+    position: absolute;
+    top: -90px;
+    left: -20px;
+    @media (min-width: 768px) {
+      top: -90px;
+      left: 30px;
+    }
+    @media (min-width: 1200px) {
+      top: -40px;
+      left: -130px;
+    }
+
     &--btn {
       display: flex;
       justify-content: center;
       padding-top: 55px;
     }
+  }
+  &__item {
+    position: relative;
+    max-width: 222px;
   }
 }
