@@ -1,0 +1,29 @@
+.mobile-menu {
+    padding: 48px 40px;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 0.5s;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../img/hero_bg1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 219px 0;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../img/hero_bg2x.jpg);
+  }
+}
