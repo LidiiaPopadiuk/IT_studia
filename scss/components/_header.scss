@@ -58,6 +58,12 @@
     display: flex;
     justify-content: flex-end;
   }
+  &__nav {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
   &__hamburger {
     border: none;
     color: $color-title;

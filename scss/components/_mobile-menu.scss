@@ -6,24 +6,51 @@
   top: 0;
   left: -100%;
   transition: 0.5s;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url(../img/hero_bg1x.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 219px 0;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
-      url(../img/hero_bg2x.jpg);
+  background-color: $color-title;
+  &__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: none;
+    background-color: $color-title;
   }
+  .is-open {
+    left: 0;
+  }
+  &__link {
+    color: $color-title;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  // background-image: linear-gradient(
+  //     0deg,
+  //     rgba(0, 0, 0, 0.2) 0%,
+  //     rgba(0, 0, 0, 0.2) 100%
+  //   ),
+  //   url(../img/hero_bg1x.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // padding: 219px 0;
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(
+  //       0deg,
+  //       rgba(0, 0, 0, 0.2) 0%,
+  //       rgba(0, 0, 0, 0.2) 100%
+  //     ),
+  //     url(../img/hero_bg2x.jpg);
+  // }
 }
