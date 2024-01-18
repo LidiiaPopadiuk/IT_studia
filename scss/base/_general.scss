@@ -2,17 +2,6 @@ body {
   font-family: Montserrat;
 }
 
-*:not(title, script) {
-  // font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-size: 16px;
-  display: block;
-  line-height: normal;
-}
 
 body {
   overflow: hidden;
@@ -39,7 +28,9 @@ html {
     max-width: 1110px;
   }
 }
-
+ul {
+  padding: 0;
+}
 li {
   list-style-type: none;
 }
@@ -49,9 +40,9 @@ a {
 }
 
 body {
-    font-family: Montserrat;
+  font-family: Montserrat;
 }
 
-img{
-  width:100%;
+img {
+  width: 100%;
 }
