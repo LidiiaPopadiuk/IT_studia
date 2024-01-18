@@ -14,9 +14,7 @@
     border: none;
     background-color: $color-title;
   }
-  .is-open {
-    left: 0;
-  }
+
   &__link {
     color: $color-title;
     font-size: 16px;
@@ -53,4 +51,8 @@
   //     ),
   //     url(../img/hero_bg2x.jpg);
   // }
+}
+
+.is-open {
+  left: 0;
 }
