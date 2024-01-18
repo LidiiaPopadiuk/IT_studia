@@ -31,7 +31,10 @@
   }
   &__descr {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      margin-top: 80px;
+    }
   }
   &__elipse2 {
     border-radius: 50% 50%;
@@ -105,5 +108,10 @@
   &__item {
     position: relative;
     max-width: 222px;
+    &:nth-child(1) {
+      @media(min-width: 1200px) {
+        margin-left: 100px;
+      }
+    }
   }
 }
