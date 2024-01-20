@@ -36,26 +36,6 @@
     align-content: space-between;
     justify-content: space-between;
   }
-  // background-image: linear-gradient(
-  //     0deg,
-  //     rgba(0, 0, 0, 0.2) 0%,
-  //     rgba(0, 0, 0, 0.2) 100%
-  //   ),
-  //   url(../img/hero_bg1x.jpg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // padding: 219px 0;
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: linear-gradient(
-  //       0deg,
-  //       rgba(0, 0, 0, 0.2) 0%,
-  //       rgba(0, 0, 0, 0.2) 100%
-  //     ),
-  //     url(../img/hero_bg2x.jpg);
-  // }
 }
 
 .is-open {
@@ -63,22 +43,29 @@
 }
 
 .decor {
+  display: none;
+  @media (min-width: 480px) {
+    display: block;
+  }
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  right: 100px;
   &__pearson {
     position: absolute;
-    bottom: 50px;
-    right: 130px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 119px;
     color: $color-mobileMenu_pearson;
   }
   &__messag {
-    position: relative;
-    // position: absolute;
+    position: absolute;
     color: $color-mobileMenu;
     font-size: 145px;
-    left: 250px;
-    bottom: 280px;
-    // top: 115px;
-    // right: 35px;
+    right: -45px;
+    top: -85px;
   }
   &__title {
     color: $color-title;
@@ -87,7 +74,7 @@
     font-weight: 800;
     line-height: 134.09%;
     position: absolute;
-    top: 125px;
-    right: 70px;
+    top: -40px;
+    right: -25px;
   }
 }
