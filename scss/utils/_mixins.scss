@@ -1,0 +1,10 @@
+%btn {
+  cursor: pointer;
+  background: $blue;
+  border-radius: 30px;
+  padding:13px 36px;
+
+  &:hover{
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+  }
+}

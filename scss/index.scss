@@ -1,3 +1,4 @@
+@import "./utils/colors";
 // base
 @import "./base/fonts";
 @import "./base/general";
@@ -5,8 +6,6 @@
 @import "./base/reset";
 
 // utils
-
-@import "./utils/colors";
 @import "./utils/mixins";
 @import "./utils/placeholder";
 @import "./utils/variables";
