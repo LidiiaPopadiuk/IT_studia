@@ -1,6 +1,6 @@
 .header {
   padding: 40px 0 40px;
-//   opacity: 0.5;
+  //   opacity: 0.5;
   border-bottom: 1px solid $color-border;
   background: transparent;
   position: fixed;
@@ -66,17 +66,15 @@
     }
   }
   &__hamburger {
-    
     border: none;
     color: $color-title;
-    font-size: 30px;
     background: transparent;
-    
+    i {
+      font-size: 30px;
+    }
 
-@media (min-width: 768px) {
-  display: none;
-}
-
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
-
