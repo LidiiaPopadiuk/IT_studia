@@ -35,80 +35,26 @@
     <link rel="stylesheet" href="./css/index.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="wrapper">
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link header__link--active" href="#"
-                  >Головна</a
-                >
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">Наші проекти</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">Послуги</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">Новини</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <button
-          class="header__hamburger"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="mobile-menu" id="mobile-menu">
-          <div class="mobile-menu__close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <ul class="mobile-menu__list">
-            <li class="monile-menu__item">
-              <a class="mobile-menu__link" href="#">Головна</a>
-            </li>
-            <li class="monile-menu__item">
-              <a class="mobile-menu__link" href="#">Наші проекти</a>
-            </li>
-            <li class="monile-menu__item">
-              <a class="mobile-menu__link" href="#">Послуги</a>
-            </li>
-            <li class="monile-menu__item">
-              <a class="mobile-menu__link" href="#">Новини</a>
-            </li>
-            <li class="monile-menu__item">
-              <a class="mobile-menu__link" href="#">Контакти</a>
-            </li>
-          </ul>
-
-          <div class="decor">
-            <span><i class="fa-solid fa-user decor__pearson"></i></span>
-            <span><i class="fa-solid fa-message decor__messag"></i></span>
-            <span class="decor__title">The best</span>
-          </div>
-        </div>
-      </div>
-    </header>
     <main>
-      <section class="hero" data-aos="zoom-in-down">
+      <section class="video">
         <div class="container">
-          <h2 class="hero__subtitle">Передова IT студія</h2>
-          <h1 class="hero__title">
-            Ми створюємо легкі рішення важких задач і проблем
-          </h1>
-          <button class="hero__btn">Наші проекти</button>
+          <div class="video__work">
+            <div class="video__titles">
+              <h2 class="video__title">Відео про нашу роботу</h2>
+              <p class="video__text">Просто подивіться, як ми працюємо</p>
+            </div>
+            <div class="video__video">
+              <img
+                class="video__img"
+                src="./src/img/video_video.png"
+                alt="video"
+              />
+              <button class="video__btn">Дивитись відео</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
