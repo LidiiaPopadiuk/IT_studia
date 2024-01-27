@@ -1,9 +1,5 @@
 .video {
   background: url(../src/img/video_bg.png) no-repeat;
-  flex-shrink: 0;
-  @media (min-width: 1200px) {
-    width: 1920px;
-  }
   &__titles {
     padding-top: 70px;
   }
