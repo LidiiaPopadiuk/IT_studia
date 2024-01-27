@@ -1,9 +1,9 @@
 @import "./utils/colors";
-// base
-@import "./base/fonts";
+// // base
+// @import "./base/fonts";
 @import "./base/general";
-@import "./base/normalize";
-@import "./base/reset";
+// @import "./base/normalize";
+// @import "./base/reset";
 
 // utils
 @import "./utils/mixins";
@@ -18,4 +18,6 @@
 @import "./components/hero";
 @import "./components/subscribe";
 @import "./components/mobile-menu";
+@import './components/standarts';
+@import './components/work';
 @import "./components/video";

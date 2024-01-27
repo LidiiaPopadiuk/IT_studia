@@ -23,10 +23,14 @@
 
   &__title {
     color: $black;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 146.28%;
     margin-bottom: 60px;
+
+    @media (min-width:400px) {
+      font-size: 36px;
+    }
   }
 
   &__desc {
@@ -37,6 +41,7 @@
   }
 
   &__link {
+    display: block;
     margin-top: 42px;
     color: $blue;
     text-decoration: underline;
