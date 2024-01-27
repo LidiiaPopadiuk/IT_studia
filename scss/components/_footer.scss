@@ -7,8 +7,10 @@
     justify-content: center;
     gap: 23px;
     padding-bottom: 70px;
+    flex-wrap: wrap;
     @media (min-width: 768px) {
       gap: 32px;
+      flex-wrap: nowrap;
     }
     @media (min-width: 1200px) {
       gap: 43px;
